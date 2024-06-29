@@ -78,15 +78,15 @@ flutter:
     - assets/fonts/
     - assets/icons/
  #- assets/icons/brands
-    - assets/images/onboarding_images/onboarding.png
-    - assets/images/onboarding_images/onbording2.jpeg
-    - assets/images/onboarding_images/onboarding3.jpeg
-    - assets/images/onboarding_images/riderlottie.json
-    - assets/images/onboarding_images/searchlottie.json
+    - assets/images/on_board_images/onboard3.json
+    -  assets/icons/loginicon/fbicon.png
+    - assets/icons/loginicon/googleicon.webp
+    -  assets/images/on_board_images/onboarding.png
+    - assets/images/on_board_images/onbording2.jpeg
+    - assets/images/on_board_images/riderlottie.json
+    - assets/images/on_board_images/searchlottie.json
+   
     - assets/logos/
-   
-    
-   
    
     
 

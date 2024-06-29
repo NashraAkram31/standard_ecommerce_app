@@ -15,8 +15,11 @@ class TImages {
 
   //Onboarding images
   static const String onboardingimage1 =
-      'assets/images/onboarding_images/riderlottie.json';
+      'assets/images/on_board_images/riderlottie.json';
   static const String onboardingimage2 =
-      'assets/images/onboarding_images/searchlottie.json';
-  static const String onboardingimage3 = 'assets/images/onboard2.json';
+      'assets/images/on_board_images/searchlottie.json';
+  static const String onboardingimage3 =
+      'assets/images/on_board_images/onboard3.json';
+  static const String googleicon = 'assets/icons/loginicon/googleicon.webp';
+  static const String fbicon = 'assets/icons/loginicon/fbicon.png';
 }
