@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: const SignUp(),
+      home: const HomeScreen(),
     );
   }
 }
