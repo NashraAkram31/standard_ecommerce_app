@@ -56,4 +56,6 @@ class TText {
       "Your Account successfully created! ";
   static const String yourAccountCreatedSubTitle =
       "Welcome to your Ultimate Shopping Destination : Your Account is Created, Unlesh the Joy of Seamless Online Shoopping";
+  static const String homeAppBartitle = "Good Day for Shopping";
+  static const String homeAppBarSubtitle = "Taimoor Sikandar";
 }

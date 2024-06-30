@@ -1,8 +1,14 @@
+import 'package:e_commerce_app/common/widgets/App_bar/app_bar.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/THome_bar.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/circular_containers.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/TPrimary_header_container.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/curved_ages.dart';
 import 'package:e_commerce_app/utils/constants/color.dart';
+import 'package:e_commerce_app/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
+import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,31 +19,12 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ClipPath(
-                clipper: MYClipper(),
-                child: Container(
-                  color: TColors.primary,
-                  padding: const EdgeInsets.all(0),
-                  child: SizedBox(
-                    height: 300,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                            top: -150,
-                            right: -250,
-                            child: CicularContainer(
-                                BackgroundColor:
-                                    TColors.textWhite.withOpacity(0.1))),
-                        Positioned(
-                            top: 150,
-                            right: -300,
-                            child: CicularContainer(
-                                BackgroundColor:
-                                    TColors.textWhite.withOpacity(0.1))),
-                      ],
-                    ),
-                  ),
-                ))
+            THeaderContainer(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [THomeAppBar()],
+              ),
+            ),
           ],
         ),
       ),
