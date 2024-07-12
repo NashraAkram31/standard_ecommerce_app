@@ -15,7 +15,7 @@ class THeaderContainer extends StatelessWidget {
       color: TColors.primary,
       padding: const EdgeInsets.all(0),
       child: SizedBox(
-        height: 300,
+        height: 350,
         child: Stack(
           children: [
             Positioned(

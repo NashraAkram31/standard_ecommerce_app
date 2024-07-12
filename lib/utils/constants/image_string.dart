@@ -22,4 +22,5 @@ class TImages {
       'assets/images/on_board_images/onboard3.json';
   static const String googleicon = 'assets/icons/loginicon/googleicon.webp';
   static const String fbicon = 'assets/icons/loginicon/fbicon.png';
+  static const String shoeicon = 'assets/icons/brand/shoeicon.png';
 }

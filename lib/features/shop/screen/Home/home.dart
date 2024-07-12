@@ -1,10 +1,19 @@
+import 'dart:js';
+
 import 'package:e_commerce_app/common/widgets/App_bar/app_bar.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/Seacrh_Container.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/THome_bar.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/circular_containers.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/TPrimary_header_container.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/TSection_Text_heading.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/circularimage.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/curved_ages.dart';
 import 'package:e_commerce_app/utils/constants/color.dart';
+import 'package:e_commerce_app/utils/constants/image_string.dart';
+import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:e_commerce_app/utils/constants/text_string.dart';
+import 'package:e_commerce_app/utils/device/device_utility.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -22,7 +31,49 @@ class HomeScreen extends StatelessWidget {
             THeaderContainer(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [THomeAppBar()],
+                children: [
+                  //App bar
+                  THomeAppBar(),
+                  const SizedBox(height: TSizes.defaultSpaceBtwSection),
+                  // Search Bar
+                  SearchContainer(
+                    text: "Seacrh in Store",
+                  ),
+                  const SizedBox(height: TSizes.defaultSpaceBtwSection),
+                  // horizontal list view builder
+
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: TSizes.defaultSpace,
+                      // horizontal list view builder
+                    ),
+                    child: Column(
+                      children: [
+                        ///HEADING
+                        TSectionHeading(
+                          title: 'Popular Categories',
+                          textColors: TColors.white,
+                        ),
+                        const SizedBox(height: TSizes.defaultSpaceBtwItem),
+
+                        /// CATEGORIES
+                        SizedBox(
+                            height: 80,
+                            child: ListView.builder(
+                                shrinkWrap: true,
+                                itemCount: 6,
+                                scrollDirection: Axis.horizontal,
+                                itemBuilder: (_, int index) {
+                                  return VerticalImageText(
+                                    image: TImages.shoeicon,
+                                    text: 'Shoes Category',
+                                    onTap: () {},
+                                  );
+                                }))
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
           ],
