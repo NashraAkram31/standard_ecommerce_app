@@ -23,4 +23,7 @@ class TImages {
   static const String googleicon = 'assets/icons/loginicon/googleicon.webp';
   static const String fbicon = 'assets/icons/loginicon/fbicon.png';
   static const String shoeicon = 'assets/icons/brand/shoeicon.png';
+  static const String banner1 = "assets/images/banner/bannernewof1.webp";
+  static const String banner2 = "assets/images/banner/banner2.webp";
+  static const String banner3 = "assets/images/banner/banner3.jpeg";
 }
