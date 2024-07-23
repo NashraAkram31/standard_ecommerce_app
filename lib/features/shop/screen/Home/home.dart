@@ -2,6 +2,8 @@ import 'dart:js';
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce_app/common/widgets/App_bar/app_bar.dart';
+import 'package:e_commerce_app/common/widgets/carts/product_cart/product_card_vert.dart';
+import 'package:e_commerce_app/common/widgets/layout/grid_view.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/Seacrh_Container.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/THome_bar.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/circular_containers.dart';
@@ -94,9 +96,14 @@ class HomeScreen extends StatelessWidget {
                   options: CarouselOptions(viewportFraction: 1),
                 ),
                 SizedBox(
-                  height: TSizes.defaultSpaceBtwItem,
+                  height: TSizes.defaultSpaceBtwSection,
                 ),
+
                 //CicularContainer(BackgroundColor: ,)
+                // gridview  vedio no 16
+                TGridview(
+                    itemcount: 2,
+                    itembuilder: (_, index) => TProductVerticalCard())
               ],
             ))
       ])),

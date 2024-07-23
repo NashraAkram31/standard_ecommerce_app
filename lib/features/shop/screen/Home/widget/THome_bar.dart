@@ -51,7 +51,7 @@ class THomeAppBar extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "2",
-                    style: Theme.of(context).textTheme.bodyText2!,
+                    style: Theme.of(context).textTheme.bodySmall,
                     selectionColor: TColors.white,
                     textScaleFactor: 0.8,
                   ),

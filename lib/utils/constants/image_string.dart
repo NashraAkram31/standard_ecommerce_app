@@ -26,4 +26,8 @@ class TImages {
   static const String banner1 = "assets/images/banner/bannernewof1.webp";
   static const String banner2 = "assets/images/banner/banner2.webp";
   static const String banner3 = "assets/images/banner/banner3.jpeg";
+
+  // products images
+  static const String shoesproduct1 =
+      "assets/images/products/shoes_product_1.jpg";
 }
