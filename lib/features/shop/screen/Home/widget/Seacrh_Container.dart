@@ -11,16 +11,19 @@ class SearchContainer extends StatelessWidget {
       this.icon,
       this.showbackground = true,
       this.showboarder = true,
+      this.padding =
+          const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
       required this.text});
   final String text;
   final IconData? icon;
   final bool showbackground, showboarder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     final dark = THelperFucntion.isDarkMode(context);
     return Padding(
-        padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: TDeviceUtils.getScreenWidth(),
           padding: EdgeInsets.all(TSizes.md),

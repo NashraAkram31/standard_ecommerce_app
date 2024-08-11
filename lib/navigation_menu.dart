@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/features/authentication/screen/store/store.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -43,7 +44,7 @@ class NavigationControllar extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   List<Widget> Screen = [
     const HomeScreen(),
-    Text("HEllow thid is 2"),
+    const Store(),
     Text("HEllow thid is 3"),
     Text("HEllow thid is 4")
   ];

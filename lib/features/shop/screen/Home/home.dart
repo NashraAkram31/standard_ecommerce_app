@@ -1,17 +1,18 @@
-import 'dart:js';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce_app/common/widgets/App_bar/app_bar.dart';
 import 'package:e_commerce_app/common/widgets/carts/product_cart/product_card_vert.dart';
 import 'package:e_commerce_app/common/widgets/layout/grid_view.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/Common_widgets/circular_image.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/Common_widgets/section_heading.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/Common_widgets/white_screen_rounded_image.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/Seacrh_Container.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/THome_bar.dart';
-import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/circular_containers.dart';
+//import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/circular_containers.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/TPrimary_header_container.dart';
-import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/TSection_Text_heading.dart';
-import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/circularimage.dart';
+//import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/TSection_Text_heading.dart';
+//import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/circularimage.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/curved_ages/curved_ages.dart';
-import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/whiteScreenRoundedImage.dart';
+//import 'package:e_commerce_app/features/shop/screen/Home/widget/custom_shapes/containers/whiteScreenRoundedImage.dart';
 import 'package:e_commerce_app/utils/constants/color.dart';
 import 'package:e_commerce_app/utils/constants/image_string.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
@@ -101,6 +102,11 @@ class HomeScreen extends StatelessWidget {
 
                 //CicularContainer(BackgroundColor: ,)
                 // gridview  vedio no 16
+                //SectionHeading()()
+                TSectionHeading(
+                  title: 'Popular Products',
+                  onpressed: () {},
+                ),
                 TGridview(
                     itemcount: 2,
                     itembuilder: (_, index) => TProductVerticalCard())

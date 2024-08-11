@@ -13,13 +13,14 @@ class TSectionHeading extends StatelessWidget {
   final bool ShowActionButton;
   final String title, buttontitle;
   final Color? textColors;
+
   final void Function()? onpressed;
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
+    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
       Text(
-        "Popular Categories ",
+        title,
         style:
             Theme.of(context).textTheme.headlineSmall!.apply(color: textColors),
         maxLines: 1,

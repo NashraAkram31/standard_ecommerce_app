@@ -1,6 +1,8 @@
 import 'package:e_commerce_app/features/authentication/screen/SignUP.widget/sign_up.dart';
 import 'package:e_commerce_app/features/authentication/screen/onboarding.dart';
 import 'package:e_commerce_app/features/shop/screen/Home/home.dart';
+import 'package:e_commerce_app/features/shop/screen/Home/widget/Common_widgets/shopping_bag_icon.dart';
+import 'package:e_commerce_app/navigation_menu.dart';
 import 'package:e_commerce_app/utils/themes/custom_theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: const HomeScreen(),
+      home: CustomNavigationBar(),
+      //Shoppingbagicon(callback: () {}),
     );
   }
 }

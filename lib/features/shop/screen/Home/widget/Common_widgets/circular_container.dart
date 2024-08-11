@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 
 class CicularContainer extends StatelessWidget {
   // ye default values hen consturctor ki
-  const CicularContainer(
+  CicularContainer(
       {super.key,
       this.width,
       this.height,
       this.child,
       this.Padding,
       this.margin,
+      this.showborder = false,
       this.radius = TSizes.cardRadiusLg,
       this.bordercolor = TColors.primaryBackgorundColor,
       this.BackgroundColor = TColors.textWhite});
@@ -20,6 +21,8 @@ class CicularContainer extends StatelessWidget {
   final Widget? child;
   final EdgeInsetsGeometry? Padding;
   final EdgeInsetsGeometry? margin;
+  bool showborder = false;
+
   final Color bordercolor;
   final Color? BackgroundColor;
   @override
@@ -29,6 +32,10 @@ class CicularContainer extends StatelessWidget {
       height: height,
       padding: Padding,
       decoration: BoxDecoration(
+          border: showborder
+              ? Border.all(color: bordercolor, width: 2.0)
+              : null, // Border agar `showBorder` true hai, tabhi dikhayega
+
           //
           borderRadius: BorderRadius.circular(radius),
           color: BackgroundColor),
