@@ -14,6 +14,7 @@ class TImages {
   static const String product2 = 'assetrs/logos/inwhite.png';
   static const String clothiconimage =
       'assets/images/products/clothiconimage.png';
+  static const String shirtimage = 'assets/images/products/shirt_image.jpg';
 
   //Onboarding images
   static const String onboardingimage1 =

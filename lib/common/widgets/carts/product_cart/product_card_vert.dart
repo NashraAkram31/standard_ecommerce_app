@@ -35,10 +35,11 @@ class TProductVerticalCard extends StatelessWidget {
             child: Column(
               children: [
                 //thumbnail,Whistleist button,doscount tag
-                CicularContainer(
+                CircularContainer(
                   height: 180,
-                  Padding: EdgeInsets.all(TSizes.sm),
-                  BackgroundColor: dark ? TColors.dark : TColors.lightGrey,
+                  padding: EdgeInsets.all(TSizes.sm),
+                  backgroundColor: dark ? TColors.dark : TColors.lightGrey,
+                  showborder: false,
                   child: Stack(
                     children: [
                       /// Thumbnail , image
@@ -52,12 +53,13 @@ class TProductVerticalCard extends StatelessWidget {
                       // Sales Tag
                       Positioned(
                           top: 12,
-                          child: CicularContainer(
+                          child: CircularContainer(
                               radius: TSizes.sm,
-                              BackgroundColor:
+                              backgroundColor:
                                   TColors.secondary.withOpacity(0.8),
-                              Padding: EdgeInsets.symmetric(
+                              padding: EdgeInsets.symmetric(
                                   horizontal: TSizes.sm, vertical: TSizes.xs),
+                              showborder: false,
                               child: Text(
                                 "25%",
                                 style: Theme.of(context)

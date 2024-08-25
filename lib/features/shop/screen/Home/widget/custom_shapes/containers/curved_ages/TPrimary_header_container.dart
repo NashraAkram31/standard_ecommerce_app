@@ -22,13 +22,17 @@ class THeaderContainer extends StatelessWidget {
             Positioned(
                 top: -150,
                 right: -250,
-                child: CicularContainer(
-                    BackgroundColor: TColors.textWhite.withOpacity(0.1))),
+                child: CircularContainer(
+                  backgroundColor: TColors.textWhite.withOpacity(0.1),
+                  showborder: false,
+                )),
             Positioned(
                 top: 150,
                 right: -300,
-                child: CicularContainer(
-                    BackgroundColor: TColors.textWhite.withOpacity(0.1))),
+                child: CircularContainer(
+                  backgroundColor: TColors.textWhite.withOpacity(0.1),
+                  showborder: false,
+                )),
             child
           ],
         ),
